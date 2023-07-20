@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="x-icon" href="lock.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>P***word Generator</h2>
+        <div class="showbox">
+            <input type="text" id="inputbox" disabled>
+            <span class="material-icons" id="copyIcon">content_copy</span>
+      </div>
+        <input type="range" min="0" max="30" value="14" id="slider-value">
+        <div class="length">
+            <h3>Password Length</h3>
+            <p>14</p>
+        </div>
+        <section>
+            <div class="content">
+                <label for="lowercase">Include Lowercase Letters (a-z)</label>
+                <input type="checkbox" id="lowercase" name="lowercase" checked>
+            </div>
+            <div class="content">
+                <label for="uppercase">Include Uppercase Letters (A-Z)</label>
+                <input type="checkbox" id="uppercase" name="uppercase" checked>
+            </div>
+            <div class="content">
+                <label for="number">Include Numbers (0-9)</label>
+                <input type="checkbox" id="number" name="number" checked>
+            </div>
+            <div class="content">
+                <label for="symbol">Include symbols (! - *)</label>
+                <input type="checkbox" id="symbol" name="symbol" checked>
+            </div>
+        </section>
+        <button class="btn">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
